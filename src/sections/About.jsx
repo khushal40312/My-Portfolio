@@ -26,8 +26,8 @@ const About = () => {
           <div>
             <p className="grid-headtext">Hi, I’m Khushal Sharma</p>
             <p className="grid-subtext">
-            With 1.3 years of self learning and building experience, I have honed my skills in both frontend and backend dev, creating dynamic
-            and responsive websites.
+            Final year student With 1.3 years of self learning and building experience, I have honed my skills in both frontend and backend dev, creating dynamic
+            and responsive websites in MERN Stack with Graphql .
             </p>
           </div>
         </div>
@@ -41,7 +41,7 @@ const About = () => {
             <p className="grid-headtext">Tech Stack</p>
             <p className="grid-subtext">
               I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-              applications
+             Web applications
             </p>
           </div>
         </div>
