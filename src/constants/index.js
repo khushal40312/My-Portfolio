@@ -41,13 +41,13 @@ export const myProjects = [
     'Live Ride Tracking & Socket Integration Real-time ride updates using Socket.io, accurate fare estimates, and OTP-verified ride start with location tracking for seamless experience.',
   href: 'https://uber-clone-frontend-gsyc.onrender.com/', // Replace this with your actual deployed URL
   texture: '/textures/project/project4.mp4', // Optional: Replace with your Uber app demo video or animation
-  logo: '/assets/uber.webp', // Optional: Add your Uber logo or app logo
+  logo: '/assets/Uber.webp', // Optional: Add your Uber logo or app logo
   logoStyle: {
     backgroundColor: '#0F111A',
     border: '0.2px solid #1A1F2E',
     boxShadow: '0px 0px 60px 0px #2F6DB54D',
   },
-  spotlight: '/assets/spotlight-uber.png', // Optional: Replace with Uber-specific image
+     spotlight: '/assets/spotlight5.png',
   tags: [
     {
       id: 1,
@@ -72,12 +72,12 @@ export const myProjects = [
     {
       id: 5,
       name: 'Tailwind CSS',
-      path: '/assets/tailwind.png',
+      path: '/assets/tailwind.jpeg',
     },
     {
       id: 6,
       name: 'Socket.io',
-      path: '/assets/socketio.png',
+      path: '/assets/socket.png',
     },
   ],
 },
