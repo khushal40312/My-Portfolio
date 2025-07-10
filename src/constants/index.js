@@ -35,6 +35,54 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+  title: 'Uber App Clone With Real-Time Ride Booking',
+  desc: 'A fully functional Uber-like application built with the MERN stack. Supports real-time ride booking, vehicle selection, fare calculation, and live ride tracking.',
+  subdesc:
+    'Live Ride Tracking & Socket Integration Real-time ride updates using Socket.io, accurate fare estimates, and OTP-verified ride start with location tracking for seamless experience.',
+  href: 'https://your-deployed-link.com/', // Replace this with your actual deployed URL
+  texture: '/textures/project/uber-app.mp4', // Optional: Replace with your Uber app demo video or animation
+  logo: '/assets/uber-logo.png', // Optional: Add your Uber logo or app logo
+  logoStyle: {
+    backgroundColor: '#0F111A',
+    border: '0.2px solid #1A1F2E',
+    boxShadow: '0px 0px 60px 0px #2F6DB54D',
+  },
+  spotlight: '/assets/spotlight-uber.png', // Optional: Replace with Uber-specific image
+  tags: [
+    {
+      id: 1,
+      name: 'MongoDB',
+      path: '/assets/mongodb.png',
+    },
+    {
+      id: 2,
+      name: 'Express.js',
+      path: '/assets/express.png',
+    },
+    {
+      id: 3,
+      name: 'React.js',
+      path: '/assets/react.svg',
+    },
+    {
+      id: 4,
+      name: 'Node.js',
+      path: '/assets/nodejs.png',
+    },
+    {
+      id: 5,
+      name: 'Tailwind CSS',
+      path: '/assets/tailwind.png',
+    },
+    {
+      id: 6,
+      name: 'Socket.io',
+      path: '/assets/socketio.png',
+    },
+  ],
+},
+
+  {
     title: 'E-commerce web store with Admin panel',
     desc: 'Arigato - MERN eCommerce Platform with Admin Panel A full-featured eCommerce application built with the MERN stack and Redux designed for seamless shopping and efficient management',
     subdesc:
