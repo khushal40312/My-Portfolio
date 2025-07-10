@@ -39,9 +39,9 @@ export const myProjects = [
   desc: 'A fully functional Uber-like application built with the MERN stack. Supports real-time ride booking, vehicle selection, fare calculation, and live ride tracking.',
   subdesc:
     'Live Ride Tracking & Socket Integration Real-time ride updates using Socket.io, accurate fare estimates, and OTP-verified ride start with location tracking for seamless experience.',
-  href: 'https://your-deployed-link.com/', // Replace this with your actual deployed URL
+  href: 'https://uber-clone-frontend-gsyc.onrender.com/', // Replace this with your actual deployed URL
   texture: '/textures/project/uber-app.mp4', // Optional: Replace with your Uber app demo video or animation
-  logo: '/assets/uber-logo.png', // Optional: Add your Uber logo or app logo
+  logo: '/assets/uber.webp', // Optional: Add your Uber logo or app logo
   logoStyle: {
     backgroundColor: '#0F111A',
     border: '0.2px solid #1A1F2E',
