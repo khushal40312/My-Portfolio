@@ -220,40 +220,7 @@ export const myProjects = [{
         path: '/assets/graphql.png',
       },
     ],
-  },
-  {
-    title: 'Ai Model - AI Response Generator',
-    desc: ' Powered by Gemini API A Node.js-based AI model leveraging the Gemini API for intelligent response generation with a sleek and user-friendly UI.',
-    subdesc:
-      'Seamless Interaction & Smart Outputs Designed for smooth AI-driven conversations, providing accurate and context-aware responses in real time',
-    href: 'https://ai-model-9hqx.onrender.com',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/ai.png',
-    logoStyle: {
-      backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-      border: '0.2px solid rgba(208, 213, 221, 1)',
-      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    },
-    spotlight: '/assets/spotlight3.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'nodeJS',
-        path: 'assets/nodejs.png',
-      },
-      {
-        id: 3,
-        name: 'express',
-        path: '/assets/express.png',
-      },
-
+      }
     ],
   },
 
