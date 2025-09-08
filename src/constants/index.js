@@ -72,13 +72,9 @@ export const myProjects = [{
       {
         id: 5,
         name: 'TypeScript',
-        path: '/assets/typescript.svg',
+        path: '/assets/typescript.png',
       },
-      {
-        id: 6,
-        name: 'LangChain',
-        path: '/assets/langchain.png',
-      },
+    
       {
         id: 7,
         name: 'LangGraph',
