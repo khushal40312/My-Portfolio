@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Globe from 'react-globe.gl';
 
@@ -26,8 +25,7 @@ const About = () => {
           <div>
             <p className="grid-headtext">Hi, I’m Khushal Sharma</p>
             <p className="grid-subtext">
-            Final year student With 1.3 years of self learning and building experience, I have honed my skills in both frontend and backend dev, creating dynamic
-            and responsive websites in MERN Stack with Graphql .
+            Recently graduated Student with 1.3 years of self-taught expertise, I thrive on building dynamic, end-to-end applications. I specialize in MERN stack development and have a passion for integrating cutting-edge AI features with LangChain and LangGraph.
             </p>
           </div>
         </div>
@@ -40,8 +38,7 @@ const About = () => {
           <div>
             <p className="grid-headtext">Tech Stack</p>
             <p className="grid-subtext">
-              I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-             Web applications
+              My expertise spans a wide range of languages, frameworks, and tools. From modern full-stack development to containerization and AI integration, I'm equipped to build robust and scalable web applications.
             </p>
           </div>
         </div>
@@ -64,7 +61,7 @@ const About = () => {
           </div>
           <div>
             <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-            <p className="grid-subtext">I&apos;m based in Himanchal pradesh, India and open to remote work worldwide.</p>
+            <p className="grid-subtext">Based in Himachal Pradesh, India, I am open to remote work and flexible with time zone communications worldwide.</p>
             <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
           </div>
         </div>
@@ -77,8 +74,7 @@ const About = () => {
           <div>
             <p className="grid-headtext">My Passion for Coding</p>
             <p className="grid-subtext">
-              I love solving problems and building things through code. Programming isn&apos;t just my
-              profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+              I'm passionate about solving real-world problems through code. My journey is driven by a love for turning complex ideas into functional applications and a constant curiosity to learn new technologies and refine my skills.
             </p>
           </div>
         </div>
