@@ -47,7 +47,7 @@ export const myProjects = [{
       border: '0.2px solid #28374A',
       boxShadow: '0px 0px 60px 0px #3F8A684D',
     },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: '/assets/spotlight4.png',
     tags: [
       {
         id: 1,
@@ -82,8 +82,8 @@ export const myProjects = [{
       },
       {
         id: 8,
-        name: 'Docker',
-        path: '/assets/docker.png',
+        name: 'LangChain',
+        path: '/assets/langchain.png',
       },
     ],
   },
@@ -135,107 +135,7 @@ export const myProjects = [{
     },
   ],
 },
-export const myProjects = [
-  {
-    title: 'TradeX – AI-Powered Crypto Trading App',
-    desc: 'A full-stack crypto exchange platform built on the MERN stack (JavaScript & TypeScript), designed for both manual and AI-driven trading.',
-    subdesc:
-      'Powered by LangChain & LangGraph, enabling intelligent trade execution, decision-making, and contextual understanding. Supports real-time market data and is Dockerized for modern CI/CD.',
-    href: 'https://trading-app-client-eight.vercel.app/home',
-    // Note: These asset paths are placeholders. You should replace them with your actual assets.
-    texture: '/textures/project/project_tradex.mp4',
-    logo: '/assets/tradex_logo.png',
-    logoStyle: {
-      backgroundColor: '#1C2534',
-      border: '0.2px solid #28374A',
-      boxShadow: '0px 0px 60px 0px #3F8A684D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'Node.js',
-        path: '/assets/nodejs.png',
-      },
-      {
-        id: 3,
-        name: 'Express',
-        path: '/assets/express.png',
-      },
-      {
-        id: 4,
-        name: 'MongoDB',
-        path: '/assets/mongodb.png',
-      },
-      {
-        id: 5,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 6,
-        name: 'LangChain',
-        path: '/assets/langchain.png',
-      },
-      {
-        id: 7,
-        name: 'LangGraph',
-        path: '/assets/langgraph.png',
-      },
-    ],
-  },
-  {
-    title: 'Uber App Clone With Real-Time Ride Booking',
-    desc: 'A fully functional Uber-like application built with the MERN stack. Supports real-time ride booking, vehicle selection, fare calculation, and live ride tracking.',
-    subdesc:
-      'Live Ride Tracking & Socket Integration Real-time ride updates using Socket.io, accurate fare estimates, and OTP-verified ride start with location tracking for seamless experience.',
-    href: 'https://uber-clone-frontend-gsyc.onrender.com/', // Replace this with your actual deployed URL
-    texture: '/textures/project/project4.mp4', // Optional: Replace with your Uber app demo video or animation
-    logo: '/assets/Uber.webp', // Optional: Add your Uber logo or app logo
-    logoStyle: {
-      backgroundColor: '#0F111A',
-      border: '0.2px solid #1A1F2E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'MongoDB',
-        path: '/assets/mongodb.png',
-      },
-      {
-        id: 2,
-        name: 'Express.js',
-        path: '/assets/express.png',
-      },
-      {
-        id: 3,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 4,
-        name: 'Node.js',
-        path: '/assets/nodejs.png',
-      },
-      {
-        id: 5,
-        name: 'Tailwind CSS',
-        path: '/assets/tailwind.jpeg',
-      },
-      {
-        id: 6,
-        name: 'Socket.io',
-        path: '/assets/socket.png',
-      },
-    ],
-  },
+
   {
     title: 'E-commerce web store with Admin panel',
     desc: 'Arigato - MERN eCommerce Platform with Admin Panel A full-featured eCommerce application built with the MERN stack and Redux designed for seamless shopping and efficient management',
@@ -303,6 +203,7 @@ export const myProjects = [
         name: 'Redux',
         path: 'assets/redux.png',
       },
+
       {
         id: 3,
         name: 'nodeJs',
@@ -320,6 +221,42 @@ export const myProjects = [
       },
     ],
   },
+  {
+    title: 'Ai Model - AI Response Generator',
+    desc: ' Powered by Gemini API A Node.js-based AI model leveraging the Gemini API for intelligent response generation with a sleek and user-friendly UI.',
+    subdesc:
+      'Seamless Interaction & Smart Outputs Designed for smooth AI-driven conversations, providing accurate and context-aware responses in real time',
+    href: 'https://ai-model-9hqx.onrender.com',
+    texture: '/textures/project/project3.mp4',
+    logo: '/assets/ai.png',
+    logoStyle: {
+      backgroundColor: '#60f5a1',
+      background:
+        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      border: '0.2px solid rgba(208, 213, 221, 1)',
+      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+    },
+    spotlight: '/assets/spotlight3.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'nodeJS',
+        path: 'assets/nodejs.png',
+      },
+      {
+        id: 3,
+        name: 'express',
+        path: '/assets/express.png',
+      },
+
+    ],
+  },
+
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
