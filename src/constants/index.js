@@ -89,7 +89,7 @@ export const myProjects = [{
   },
                            
   {
-  title: 'U'ber App Clone With Real-Time Ride Booking',
+  title: 'Uber App Clone With Real-Time Ride Booking',
   desc: 'A fully functional Uber-like application built with the MERN stack. Supports real-time ride booking, vehicle selection, fare calculation, and live ride tracking.',
   subdesc:
     'Live Ride Tracking & Socket Integration Real-time ride updates using Socket.io, accurate fare estimates, and OTP-verified ride start with location tracking for seamless experience.',
