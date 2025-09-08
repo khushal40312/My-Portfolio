@@ -33,7 +33,65 @@ export const clientReviews = [
 
 ];
 
-export const myProjects = [
+export const myProjects = [{
+    title: 'TradeX – AI-Powered Crypto Trading App',
+    desc: 'A full-stack crypto exchange platform built on the MERN stack (JavaScript & TypeScript), designed for both manual and AI-driven trading.',
+    subdesc:
+      'Powered by LangChain & LangGraph, enabling intelligent trade execution, decision-making, and contextual understanding. Supports real-time market data and is Dockerized for modern CI/CD.',
+    href: 'https://trading-app-client-eight.vercel.app/home',
+    // Note: These asset paths are placeholders. You should replace them with your actual assets.
+    texture: '/textures/project/project_tradex.mp4',
+    logo: '/assets/tradex_logo.png',
+    logoStyle: {
+      backgroundColor: '#1C2534',
+      border: '0.2px solid #28374A',
+      boxShadow: '0px 0px 60px 0px #3F8A684D',
+    },
+    spotlight: '/assets/spotlight_tradex.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'Node.js',
+        path: '/assets/nodejs.png',
+      },
+      {
+        id: 3,
+        name: 'Express',
+        path: '/assets/express.png',
+      },
+      {
+        id: 4,
+        name: 'MongoDB',
+        path: '/assets/mongodb.png',
+      },
+      {
+        id: 5,
+        name: 'TypeScript',
+        path: '/assets/typescript.svg',
+      },
+      {
+        id: 6,
+        name: 'LangChain',
+        path: '/assets/langchain.png',
+      },
+      {
+        id: 7,
+        name: 'LangGraph',
+        path: '/assets/langgraph.png',
+      },
+      {
+        id: 8,
+        name: 'Docker',
+        path: '/assets/docker.png',
+      },
+    ],
+  },
+                           
   {
   title: 'Uber App Clone With Real-Time Ride Booking',
   desc: 'A fully functional Uber-like application built with the MERN stack. Supports real-time ride booking, vehicle selection, fare calculation, and live ride tracking.',
