@@ -47,7 +47,7 @@ export const myProjects = [{
       border: '0.2px solid #28374A',
       boxShadow: '0px 0px 60px 0px #3F8A684D',
     },
-    spotlight: '/assets/spotlight5.png,
+    spotlight: '/assets/spotlight5.png',
     tags: [
       {
         id: 1,
