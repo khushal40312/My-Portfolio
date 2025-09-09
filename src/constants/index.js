@@ -222,8 +222,7 @@ export const myProjects = [{
     ],
   }
 
-    ],
-  },
+    
 
 ];
 
