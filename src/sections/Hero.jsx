@@ -4,18 +4,18 @@ import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
 
-import Cube from '../component/Cube.jsx';
-import Rings from '../component/Rings.jsx';
-import ReactLogo from '../component/ReactLogo.jsx';
-import Button from '../component/Button.jsx';
-import Target from '../component/Target.jsx';
-import CanvasLoader from '../component/Loading.jsx';
-import HeroCamera from '../component/HeroCamera.jsx';
-import { calculateSizes } from '../constants/index.js';
-import HackerRoom from '../component/HackerRoom.jsx'
+import Cube from './Cube';
+import Rings from './Rings';
+import ReactLogo from './ReactLogo';
+import Button from './Button';
+import Target from './Target';
+import CanvasLoader from './CanvasLoader';
+import HeroCamera from './HeroCamera';
+import { calculateSizes } from '../constants';
+import HackerRoom from './HackerRoom';
 
 const Hero = () => {
-  // Use media queries to determine screen size
+  // media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
@@ -23,23 +23,30 @@ const Hero = () => {
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative" id="home">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-        <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-        Hi, I am Khushal <span className="waving-hand">👋</span>
-
+    <section className="hero-section" id="home">
+      <div className="ui-container">
+        <p style={{ fontSize: 20, margin: 0 }}>
+          Hi, I am Khushal <span style={{ marginLeft: 8 }}>👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">Building Complex Projects & Grinding</p>
+        <p style={{ color: 'var(--muted)' }}>Building Complex Projects & Grinding</p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
-        <Canvas className="w-full h-full">
+      {/* Canvas wrapper behind UI (z-0) */}
+      <div className="canvas-wrapper">
+        {/* Make canvas transparent so it does not paint a black background over the page */}
+        <Canvas
+          className="w-full h-full"
+          gl={{ antialias: true, alpha: true }}
+          style={{ background: 'transparent' }}
+        >
+          {/* A small loader — not a full-screen overlay — so once loaded it will unmount */}
           <Suspense fallback={<CanvasLoader />}>
-            {/* To hide controller */}
             <Leva hidden />
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
-
+            {/* single camera that becomes default */}
+            <PerspectiveCamera makeDefault position={[0, 0, 8]} />
+            {/* HeroCamera is a non-camera wrapper in this example, left for your custom logic */}
             <HeroCamera isMobile={isMobile}>
+              {/* placeholder complex model */}
               <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} />
             </HeroCamera>
 
@@ -50,15 +57,15 @@ const Hero = () => {
               <Cube position={sizes.cubePosition} />
             </group>
 
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            <ambientLight intensity={0.8} />
+            <directionalLight position={[10, 10, 10]} intensity={0.6} />
           </Suspense>
         </Canvas>
       </div>
 
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#about" className="w-fit">
-          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+      <div className="ui-container" style={{ position: 'absolute', bottom: 24, left: 0, right: 0 }}>
+        <a href="#about" style={{ textDecoration: 'none' }}>
+          <Button name="Let's work together" />
         </a>
       </div>
     </section>
