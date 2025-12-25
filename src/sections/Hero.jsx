@@ -32,15 +32,22 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">Building Complex Projects & Grinding</p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
-        <Canvas className="w-full h-full">
+       <div className="w-full h-[520px] mt-10 relative">
+        <Canvas
+          className="w-full h-full"
+          frameloop="demand"
+          camera={{ position: [0, 0, 30], fov: 45 }}
+        >
           <Suspense fallback={<CanvasLoader />}>
-            {/* To hide controller */}
             <Leva hidden />
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
             <HeroCamera isMobile={isMobile}>
-              <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.1, -Math.PI, 0]} />
+              <HackerRoom
+                scale={sizes.deskScale}
+                position={sizes.deskPosition}
+                rotation={[0.1, -Math.PI, 0]}
+              />
             </HeroCamera>
 
             <group>
