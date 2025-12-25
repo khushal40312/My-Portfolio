@@ -8,7 +8,7 @@ import Cube from '../component/Cube.jsx';
 import Rings from '../component/Rings.jsx';
 import ReactLogo from '../component/ReactLogo.jsx';
 import Button from '../component/Button.jsx';
-import Target from '../component/Target.jsx';
+// import Target from '../component/Target.jsx';
 import CanvasLoader from '../component/Loading.jsx';
 import HeroCamera from '../component/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
@@ -44,7 +44,7 @@ const Hero = () => {
             </HeroCamera>
 
             <group>
-              <Target position={sizes.targetPosition} />
+              {/* <Target position={sizes.targetPosition} /> */}
               <ReactLogo position={sizes.reactLogoPosition} />
               <Rings position={sizes.ringPosition} />
               <Cube position={sizes.cubePosition} />
